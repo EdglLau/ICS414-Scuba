@@ -1,6 +1,10 @@
 import java.util.Scanner;
 import java.util.HashMap;
-
+/**
+ * /////////////////////////////////////////////////////////////////////
+ * DISCLAIMER: THIS IS A PROTOTYPE AND CANNOT BE USED TO PLAN REAL DIVES
+ * /////////////////////////////////////////////////////////////////////
+ **/
     //Table3 Repetitive Dive TimeTable
     public class DiveTable3{
         private HashMap map = new HashMap<Integer, String>();
@@ -166,7 +170,11 @@ import java.util.HashMap;
             }
             
         }
-
+/**
+ * /////////////////////////////////////////////////////////////////////
+ * DISCLAIMER: THIS IS A PROTOTYPE AND CANNOT BE USED TO PLAN REAL DIVES
+ * /////////////////////////////////////////////////////////////////////
+ **/
         //takes a CAPITAL letter and returns a number to correspond to the 2d array.
         public int convertLetter(char letter){
             switch(letter){
@@ -198,7 +206,11 @@ import java.util.HashMap;
             }
             return 13;
         }
-        
+/**
+ * /////////////////////////////////////////////////////////////////////
+ * DISCLAIMER: THIS IS A PROTOTYPE AND CANNOT BE USED TO PLAN REAL DIVES
+ * /////////////////////////////////////////////////////////////////////
+ **/        
         //convert depth into appropriate number for 2d array
         //takes an int as input and returns appropriate int
         public int convertDepth(int num){
@@ -226,7 +238,11 @@ import java.util.HashMap;
                 return 10;
             }
         }
-        
+/**
+ * /////////////////////////////////////////////////////////////////////
+ * DISCLAIMER: THIS IS A PROTOTYPE AND CANNOT BE USED TO PLAN REAL DIVES
+ * /////////////////////////////////////////////////////////////////////
+ **/        
         //returns values of residual nitrogen and adjusted maximum dive time as a string
         public String getValues(int letter, int depth){
             
@@ -236,7 +252,11 @@ import java.util.HashMap;
             
         }
 
-        
+ /**
+ * /////////////////////////////////////////////////////////////////////
+ * DISCLAIMER: THIS IS A PROTOTYPE AND CANNOT BE USED TO PLAN REAL DIVES
+ * /////////////////////////////////////////////////////////////////////
+ **/       
         public static void main(String args[]){
             DiveTable3 tableTop = new DiveTable3();
             Scanner scan = new Scanner(System.in);
