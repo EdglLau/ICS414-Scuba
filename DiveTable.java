@@ -1,7 +1,3 @@
-package Divetable;
-
-import java.util.Scanner;
-
 /**
  * DISCLAIMER: This system is a PROTOTYPE and cannot be used to plan real dives. 
  * @author Edgar Lau
@@ -13,7 +9,6 @@ import java.util.Scanner;
  * @author Edgar Lau
  *
  */
-
 
 public class DiveTable {
   private int depth;
@@ -21,33 +16,8 @@ public class DiveTable {
   private char letter;
   private boolean warning = false;
   private int warningNum = 0;
-  Scanner scanner = new Scanner(System.in);
   
-  public DiveTable() {
-    System.out.println("Please input depth");
-    int temp = scanner.nextInt();
-    depth = roundUp(temp);
-    if(depth < 40) {
-      depth = 40;
-    }
-    System.out.println("Please input time");
-    time = scanner.nextInt();
-    
-    System.out.println(depth + " " + time);
-    
-    depthGroup(depth, time);
-    
-    System.out.println(depth + " " + time + " " + letter);
-    if(letter == 'Z') {
-      System.out.println("Unsafe");
-    }
-    
-    if(warning == true) {
-      System.out.println("Stop time at 15 ft: " + warningNum);
-    }
-  }
-  
-  private int roundUp(int dep) {
+  public int roundUp(int dep) {
     int temp = dep;
     if(dep % 10 != 0) {
       temp = dep % 10;
@@ -59,7 +29,7 @@ public class DiveTable {
     
   }
   
-  private void depthGroup(int depthValue, int time) {
+  public void depthGroup(int depthValue, int time) {
     switch(depthValue) {
       case 40:
         depth40(time);
@@ -473,16 +443,14 @@ public class DiveTable {
     
   }
   
-  /**public static void main(String args[]) {
-    DiveTable dive = new DiveTable();
-    
-    
-  }*/
 
   private void setLetter(char letter) {
     this.letter = letter;
   }
 
+  public char getLetter(){
+	  return letter;
+  }
   
 
 }
