@@ -1,4 +1,3 @@
-import java.util.Scanner;
 import java.util.HashMap;
 /**
  * /////////////////////////////////////////////////////////////////////
@@ -35,7 +34,7 @@ import java.util.HashMap;
             map.put(16, "7 15");
             map.put(17, "6 9");
             map.put(18, "6 9");
-            map.put(19, "6 0");
+            map.put(19, "6 X");
             
             //20-29 C
             map.put(20, "25 105");
@@ -46,8 +45,8 @@ import java.util.HashMap;
             map.put(25, "11 14");
             map.put(26, "10 12");
             map.put(27, "10 5");
-            map.put(28, "9 0");
-            map.put(29, "8 0");
+            map.put(28, "9 X");
+            map.put(29, "8 X");
             
             //30-39 D
             map.put(30, "37 93");
@@ -57,9 +56,9 @@ import java.util.HashMap;
             map.put(34, "18 17");
             map.put(35, "16 9");
             map.put(36, "14 8");
-            map.put(37, "13 0");
-            map.put(38, "12 0");
-            map.put(39, "11 0");
+            map.put(37, "13 X");
+            map.put(38, "12 X");
+            map.put(39, "11 X");
             
             //40-49 E
             map.put(40, "49 81");
@@ -69,9 +68,9 @@ import java.util.HashMap;
             map.put(44, "23 12");
             map.put(45, "20 5");
             map.put(46, "18 4");
-            map.put(47, "16 0");
-            map.put(48, "15 0");
-            map.put(49, "13 0");
+            map.put(47, "16 X");
+            map.put(48, "15 X");
+            map.put(49, "13 X");
             
             //50-59 F
             map.put(50, "61 69");
@@ -79,83 +78,83 @@ import java.util.HashMap;
             map.put(52, "36 19");
             map.put(53, "31 14");
             map.put(54, "28 7");
-            map.put(55, "24 0");
-            map.put(56, "22 0");
-            map.put(57, "20 0");
-            map.put(58, "18 0");
-            map.put(59, "16 0");
+            map.put(55, "24 X");
+            map.put(56, "22 X");
+            map.put(57, "20 X");
+            map.put(58, "18 X");
+            map.put(59, "16 X");
             
             //60-69 G
             map.put(60, "73 57");
             map.put(61, "56 24");
             map.put(62, "44 11");
             map.put(63, "37 8");
-            map.put(64, "32 0");
-            map.put(65, "29 0");
-            map.put(66, "26 0");
-            map.put(67, "24 0");
-            map.put(68, "21 0");
-            map.put(69, "19 0");
+            map.put(64, "32 X");
+            map.put(65, "29 X");
+            map.put(66, "26 X");
+            map.put(67, "24 X");
+            map.put(68, "21 X");
+            map.put(69, "19 X");
             
             //70-79 H
             map.put(70, "87 43");
             map.put(71, "66 14");
-            map.put(72, "52 0");
-            map.put(73, "43 0");
-            map.put(74, "38 0");
-            map.put(75, "33 0");
-            map.put(76, "30 0");
-            map.put(77, "27 0");
-            map.put(78, "25 0");
-            map.put(79, "22 0");
+            map.put(72, "52 X");
+            map.put(73, "43 X");
+            map.put(74, "38 X");
+            map.put(75, "33 X");
+            map.put(76, "30 X");
+            map.put(77, "27 X");
+            map.put(78, "25 X");
+            map.put(79, "22 X");
             
             //80-89 I
             map.put(80, "101 29");
             map.put(81, "76 4");
-            map.put(82, "61 0");
-            map.put(83, "50 0");
-            map.put(84, "43 0");
-            map.put(85, "38 0");
-            map.put(86, "34 0");
-            map.put(87, "31 0");
-            map.put(88, "28 0");
-            map.put(89, "25 0");
+            map.put(82, "61 X");
+            map.put(83, "50 X");
+            map.put(84, "43 X");
+            map.put(85, "38 X");
+            map.put(86, "34 X");
+            map.put(87, "31 X");
+            map.put(88, "28 X");
+            map.put(89, "25 X");
             
             //90-99 J
             map.put(90, "116 14");
-            map.put(91, "87 0");
-            map.put(92, "70 0");
-            map.put(93, "57 0");
-            map.put(94, "48 0");
-            map.put(95, "43 0");
-            map.put(96, "38 0");
-            map.put(97, "X");
-            map.put(98, "X");
-            map.put(99, "X");
+            map.put(91, "87 X");
+            map.put(92, "70 X");
+            map.put(93, "57 X");
+            map.put(94, "48 X");
+            map.put(95, "43 X");
+            map.put(96, "38 X");
+            map.put(97, "X X");
+            map.put(98, "X X");
+            map.put(99, "X X");
             
             //100-109 K
-            map.put(100, "138 0");
-            map.put(101, "99 0");
-            map.put(102, "79 0");
-            map.put(103, "64 0");
-            map.put(104, "54 0");
-            map.put(105, "47 0");
-            map.put(106, "0 0");
-            map.put(107, "X");
-            map.put(108, "X");
-            map.put(109, "X");
+            map.put(100, "138 X");
+            map.put(101, "99 X");
+            map.put(102, "79 X");
+            map.put(103, "64 X");
+            map.put(104, "54 X");
+            map.put(105, "47 X");
+            map.put(106, "X X");
+            map.put(107, "X X");
+            map.put(108, "X X");
+            map.put(109, "X X");
             
             //110-119 L
-            map.put(110, "161 0");
-            map.put(111, "111 0");
-            map.put(112, "88 0");
-            map.put(113, "72 0");
-            map.put(114, "61 0");
-            map.put(115, "53 0");
-            map.put(116, "0 0");
-            map.put(117, "X");
-            map.put(118, "X");
-            map.put(119, "X");
+            map.put(110, "161 X");
+            map.put(111, "111 X");
+            map.put(112, "88 X");
+            map.put(113, "72 X");
+            map.put(114, "61 X");
+            map.put(115, "53 X");
+            map.put(116, "X X");
+            map.put(117, "X X");
+            map.put(118, "X X");
+            map.put(119, "X X");
             
             
             int sum = 0;
@@ -257,26 +256,5 @@ import java.util.HashMap;
  * DISCLAIMER: THIS IS A PROTOTYPE AND CANNOT BE USED TO PLAN REAL DIVES
  * /////////////////////////////////////////////////////////////////////
  **/       
-        public static void main(String args[]){
-            DiveTable3 tableTop = new DiveTable3();
-            Scanner scan = new Scanner(System.in);
-            
-            
-            
-            System.out.println("Input the Group Letter you are in");
-            String input = scan.nextLine();
-            System.out.println("Your Group Letter is " + input);
-            int letterNum = tableTop.convertLetter(input.charAt(0));
-            
-            System.out.println("Input the Depth you want to go");
-            String depthString = scan.nextLine();
-            int depthNum = Integer.parseInt(depthString);
-            System.out.println("Depth is " + depthNum);
-            
-            String temp = tableTop.getValues(letterNum, tableTop.convertDepth(depthNum));
-            
-            System.out.println("Values are " + temp);
-            
-            
-        }
+
     }
